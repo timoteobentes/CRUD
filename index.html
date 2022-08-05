@@ -1,0 +1,74 @@
+<?php
+
+    session_start();
+
+    // print_r($_SESSION);
+
+    if ((!isset($_SESSION['email']) == true) AND (!isset($_SESSION['senha']) == true)) {
+
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header("Location: ./login.php");
+
+    } else {
+
+        $logado = $_SESSION['email'];
+
+    }
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <ion-icon name="logo-youtube"></ion-icon>
+        </div>
+        
+        <div class="pesquisa">
+            <input type="text" name="pesquisa" id="pesquisa">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+
+        <div class="right">
+            <a href="index.html"><ion-icon name="person-outline"></ion-icon></a>
+            <a href="index.html"><ion-icon name="power-outline"></ion-icon></a>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Clientes</a></li>
+            <li><a href="index.html">Produtos</a></li>
+            <li><a href="index.html">Transportes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="bv">
+            <span>Bem vindo</span><br>
+            <h1>Timóteo Bentes</h1>
+        </div>
+        <br>
+        <h3>O que deseja fazer?</h3>
+
+        <div class="acoes">
+            <a href="#">Ver Produtos</a>
+            <a href="cadastro.php">Cadastrar</a>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

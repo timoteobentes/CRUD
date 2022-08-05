@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #f5f5dc;
+}
+
+/*/////////////////
+    HEADER 
+/////////////////*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #ff9900;
+    height: 5em;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .2);
+}
+
+.logo {
+    margin-left: 3em;
+}
+
+.logo ion-icon {
+    font-size: 5em;
+}
+
+.pesquisa {
+    position: relative;
+    top: 1.2em;
+}
+
+.pesquisa #pesquisa {
+    width: 25em;
+    font-size: 1.5em;
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: .4em;
+}
+
+.pesquisa ion-icon {
+    display: inline-block;
+    position: relative;
+    left: -2em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.right {
+    margin-right: 1em;
+    margin-top: .7em;
+    font-size: 2em;
+}
+
+.right ion-icon {
+    margin-right: 1em;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.right ion-icon:hover {
+    color: #000;
+}
+
+/*/////////////////
+    SIDEBAR 
+/////////////////*/
+
+.sidebar {
+    display: flex;
+    background: #ff9900;
+    width: 30em;
+    height: 3em;
+    position: relative;
+    left: 47em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+}
+
+ul {
+    position: relative;
+    top: .4em;
+    left: 2em;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul li a {
+    margin-right: 1em;
+    color: #f5f5dc;
+    transition: all.5s ease;
+}
+
+ul li a:hover {
+    color: #000;
+}
+
+/*/////////////////
+    MAIN 
+/////////////////*/
+
+main {
+    position: absolute;
+    left: 15em;
+    top: 10em;
+}
+
+.bv {
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.bv h1 {
+    font-family: cursive;
+}
+
+.acoes {
+    margin-top: 2em;
+}
+
+.acoes a {
+    background: #ff9900;
+    color: #000;
+    padding: 1em;
+    border-radius: 1em;
+}
